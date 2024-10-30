@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+        .turismo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .turismo-card {
+            background-color: #262649;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            width: 45%;
+            color: white;
+            overflow: hidden;
+        }
+
+        .turismo-card img {
+            width: 100%;
+            height: 400px; /* Define uma altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem se ajuste ao espaço definido sem distorção */
+            border-bottom: 1px solid #00BFFF;
+}
+
+
+        .turismo-card .content {
+            padding: 20px;
+        }
+
+        .turismo-card h3 {
+            margin-top: 0;
+            text-align: center; /* Centraliza o título */
+}
+
+
+        .turismo-card p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header id="menu-header">
+        <h1>Atlas</h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="name-container">
+                        <span class="label">Página Principal</span>
+                        <img src="icones/home.png" alt="Página Principal" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="paises.html">
+                    <div class="name-container">
+                        <span class="label">Países</span>
+                        <img src="icones/paises.png" alt="Países" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="pontos-turisticos.html">
+                    <div class="name-container">
+                        <span class="label">Pontos Turísticos</span>
+                        <img src="icones/turismo.png" alt="Pontos Turísticos" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="restaurantes.html">
+                    <div class="name-container">
+                        <span class="label">Restaurantes</span>
+                        <img src="icones/restaurant.png" alt="Restaurantes" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="informacoes.html">
+                    <div class="name-container">
+                        <span class="label">Informações</span>
+                        <img src="icones/informacoes.png" alt="Informações" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="hospedagens.html">
+                    <div class="name-container">
+                        <span class="label">Hospedagens</span>
+                        <img src="icones/hospedagem.png" alt="Hospedagens" class="icon">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    
+    <div class="turismo-container">
+        <!-- Card de Pontos Turísticos - Japão -->
+        <!-- Card de Pontos Turísticos - Japão -->
+<div class="turismo-card">
+    <img src="imagens/senso-ji.jpg" alt="Senso-ji">
+    <div class="content">
+        <h3>Senso-ji</h3>
+        <p>Templo budista histórico e um dos mais visitados em Tokyo. Senso-ji é conhecido por sua bela arquitetura e por ser um centro espiritual e cultural. Fundado em 645, é o templo mais antigo de Tokyo e atrai milhões de turistas e devotos todos os anos. O complexo do templo inclui a porta Kaminarimon, o salão principal, e a pagoda de cinco andares.</p>
+    </div>
+</div>
+
+<div class="turismo-card">
+    <img src="imagens/Dotonbori.jpg" alt="Tokyo Tower">
+    <div class="content">
+        <h3>Dotonbori</h3>
+        <p>Torre icônica com vista panorâmica da cidade. Dotonbori é uma das áreas mais animadas de Osaka, conhecida por suas luzes de néon, cartazes gigantescos e atmosfera vibrante. Além das vistas deslumbrantes, a área é famosa por sua variedade de restaurantes e opções de entretenimento, sendo um destino imperdível para quem visita o Japão.</p>
+    </div>
+</div>        
+        <!-- Card de Pontos Turísticos - Inglaterra -->
+<div class="turismo-card">
+    <img src="imagens/big_ben.jpg" alt="Big Ben">
+    <div class="content">
+        <h3>Big Ben</h3>
+        <p>Famosa torre do relógio e símbolo de Londres. Big Ben é, na verdade, o sino dentro da Elizabeth Tower, adjacente ao Palácio de Westminster. É um dos marcos mais reconhecíveis do mundo e uma visita obrigatória para turistas em Londres. O som de seus sinos é transmitido diariamente pela BBC, mantendo uma tradição que começou em 1923.</p>
+    </div>
+</div>
+
+<div class="turismo-card">
+    <img src="imagens/london_eye.jpg" alt="London Eye">
+    <div class="content">
+        <h3>London Eye</h3>
+        <p>Roda-gigante icônica com vistas panorâmicas. A London Eye é uma das maiores rodas-gigantes do mundo, oferecendo vistas espetaculares de até 40 km em todas as direções. Desde a sua abertura em 2000, tornou-se uma das atrações mais populares de Londres, proporcionando aos visitantes uma perspectiva única da cidade, especialmente ao pôr do sol.</p>
+    </div>
+</div>
+
+        
+        <!-- Card de Pontos Turísticos - Chile -->
+<div class="turismo-card">
+    <img src="imagens/cerro_san_cristobal.jpg" alt="Cerro San Cristóbal">
+    <div class="content">
+        <h3>Cerro San Cristóbal</h3>
+        <p>Mirante com vistas espetaculares da cidade. O Cerro San Cristóbal é uma colina localizada no centro de Santiago, oferecendo vistas panorâmicas impressionantes da cidade e dos Andes. No topo da colina, você encontrará uma estátua da Virgem Maria, além de jardins, trilhas e um zoológico. É um lugar perfeito para caminhadas e piqueniques, atraindo tanto turistas quanto moradores locais.</p>
+    </div>
+</div>
+
+<div class="turismo-card">
+    <img src="imagens/la_moneda.jpg" alt="La Moneda">
+    <div class="content">
+        <h3>La Moneda</h3>
+        <p>Palácio presidencial e centro histórico. O Palácio de La Moneda é a sede do governo do Chile, localizado no centro de Santiago. Além de ser um importante edifício governamental, La Moneda é um símbolo histórico do Chile. O palácio oferece visitas guiadas, onde os visitantes podem aprender mais sobre a história do país e sua importância política. Os arredores incluem belas praças e monumentos, tornando a área um importante ponto turístico da cidade.</p>
+    </div>
+</div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Atlas. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

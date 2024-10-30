@@ -1,0 +1,421 @@
+/* Estilos gerais do corpo */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background: #1E1E2E;
+    color: #FFFFFF;
+}
+
+/* Estilos do cabeçalho */
+header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os itens */
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #262649;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 20px;
+            height: auto;
+            z-index: 1000;
+            font-size: 1.2em;
+            box-shadow: 2px 0 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Título do site */
+        header h1 {
+            flex-basis: 100%;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        /* Menu do cabeçalho */
+        #menu-header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        /* Links do menu do cabeçalho */
+        #menu-header ul li {
+            margin: 0 10px;
+        }
+
+        #menu-header ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #menu-header ul li a:hover .label {
+            color: #00BFFF; /* Cor ao passar o mouse */
+            transition: color 0.3s ease;
+        }
+
+.name-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px);
+    filter: invert(100%) brightness(2);
+}
+
+.label {
+    transition: all 0.3s ease;
+}
+
+.name-container:hover .icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center;
+    }
+    
+    nav, .budget-container {
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    nav a, .budget-container input[type="text"], .budget-container button {
+        margin-bottom: 10px;
+        width: 100%;
+    
+    }
+}
+
+nav#menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+nav#menu-nav ul li {
+    margin: 0 10px;
+}
+
+nav#menu-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.8s;
+    padding: 0 20px;
+}
+
+nav#menu-nav ul li a:hover {
+    color: #00BFFF;
+}
+
+nav#menu-nav ul li a:focus,
+button:focus {
+    outline: 2px solid #00BFFF; /* Cor de destaque ao focar */
+}
+#sidebar {
+    position: absolute; /* Fixa a sidebar dentro do contêiner principal */
+    top: 10em; /* Ajuste conforme necessário */
+    left: 5em; /* Pode ajustar ou usar 'right' se preferir à direita */
+    width: 200px;
+    background: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+#sidebar h2 {
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 2px;
+}
+
+#sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+#sidebar nav ul li a:hover {
+    color: #00BFFF;
+}
+
+#container {
+    display: flex;
+    position: relative; /* Adicionado para permitir o posicionamento absoluto da sidebar */
+    margin-top: 2em;
+}
+
+main {
+    flex-grow: 1;
+    margin-right: 220px; /* Espaço para a sidebar */
+}
+
+#overview-section {
+    width: calc(100% - 220px); /* Ajusta a largura considerando a sidebar */
+    margin-left: 24em ;
+    margin-top: 0;
+}
+
+
+#budget-form {
+    margin-top: 0px;
+}
+section {
+    margin-bottom: 2em;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+        }
+
+form {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, button {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #7B68EE;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: #7B48EE;
+}
+
+canvas {
+    width: 100%;
+    height: 800px; /* Define uma altura fixa para o gráfico */
+    max-width: 100%; /* Garante que o gráfico não ultrapasse a largura do contêiner */
+}
+
+#myChart {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hidden {
+    display: none;
+}
+section .info-box{
+    margin-left: 22em;
+}
+
+.info-box {
+    background: #262649;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 100%; 
+    max-width: 1400px;
+}
+
+.suggestions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category {
+    flex-basis: calc(50% - 20px); /* Duas colunas com espaço entre elas */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category .item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.category .item div {
+    margin-bottom: 10px;
+    background: #1E1E2E;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.category .item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.option-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    color: white;
+} 
+
+.option {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 10px; 
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+}
+
+.option div {
+    margin: 5px 0;
+}
+
+.category-item {
+    background: #262649;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que todas as divs tenham a mesma altura */
+}
+
+.category-item hr {
+    width: 100%; /* Garante que os hr estejam alinhados */
+    margin: 10px 0; /* Ajusta o espaço acima e abaixo do hr */
+    border: 1px solid #FFFFFF; /* Ajusta a cor da linha */
+}
+
+.category-link {
+    color: white;
+    text-decoration: none;X
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}
+
+.category-item img {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a altura proporcional */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+
+hr {
+    border: 1px solid #FFFFFF;
+}
+
+#restaurants-container, #tourism-container, #attractions-container, #shopping-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Remover sublinhado dos links */
+.restaurant-link, .tourism-link, .attraction-link, .shopping-link {
+    text-decoration: none;
+    color: white; /* Cor para todos os links */
+    font-size: 1.2em;
+}
+
+/* Adicionar efeito hover para os links */
+.restaurant-link:hover, .tourism-link:hover, .attraction-link:hover, .shopping-link:hover {
+    text-decoration: none;
+    color: #00BFFF; /* Cor para o hover */
+    transition: color 0.4s
+}
+
+footer {
+    background-color: #262649;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #00BFFF;
+}

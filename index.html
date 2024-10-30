@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-currency="JPY">
+    <header id="menu-header">
+        <h1>Atlas</h1>
+        <ul>
+            <li>
+                <a href="Paises.html">
+                <div class="name-container">
+                    <span class="label">Países</span>
+                    <img src="icones/paises.png" alt="Países" class="icon">
+                </div>
+            </li>
+            <li>
+                <a href="pontos-turisticos.html">
+                    <div class="name-container">
+                        <span class="label">Pontos Turísticos</span>
+                        <img src="icones/turismo.png" alt="Pontos Turísticos" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="restaurantes.html">
+                    <div class="name-container">
+                        <span class="label">Restaurantes</span>
+                        <img src="icones/restaurant.png" alt="Restaurantes" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="informacoes.html">
+                    <div class="name-container">
+                        <span class="label">Informações</span>
+                        <img src="icones/informacoes.png" alt="Informações" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="hospedagens.html">
+                    <div class="name-container">
+                        <span class="label">Hospedagens</span>
+                        <img src="icones/hospedagem.png" alt="Hospedagens" class="icon">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <div id="container">
+        <div id="sidebar">
+            <h2>Cidades</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" onclick="selectCountry('Tokyo')">Tokyo</a></li>
+                    <li><a href="Londres.html" onclick="selectCountry('Londres')">Londres</a></li>
+                    <li><a href="Santiago.html" onclick="selectCountry('Santiago')">Santiago</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <section id="overview-section">
+                <h2>Informe seu orçamento</h2>
+                <form id="budget-form">
+                    <label for="budget">Orçamento (R$):</label>
+                    <input type="number" id="budget" name="budget" required>
+                    <button type="submit">Gerar Sugestões</button>
+                </form>
+                <button id="toggle-currency">Converter moeda</button>
+                <div class="option-box">
+                    <div class="option" id="restaurants" onclick="moveValue(0)">Restaurantes<br>
+                        <div id="restaurants-value">R$0</div>
+                    </div>
+                    <div class="option" id="tourism" onclick="moveValue(1)">Turismo<br>
+                        <div id="tourism-value">R$0</div>
+                    </div>
+                    <div class="option" id="attractions" onclick="moveValue(2)">Atrações<br>
+                        <div id="attractions-value">R$0</div>
+                    </div>
+                    <div class="option" id="shopping" onclick="moveValue(3)">Compras<br>
+                        <div id="shopping-value">R$0</div>
+                    </div>
+                </div>
+
+                <canvas id="myChart"></canvas>
+
+            </section>
+
+            <section id="info-section" class="hidden">
+                <div class="info-box">
+                    <h2>Sugestões</h2>
+                    <div class="suggestions-grid">
+                        <div class="category">
+                            <h3>Restaurantes</h3>
+                            <div class="item" id="restaurants-container"></div>
+                        </div>
+                        <div class="category">
+                            <h3>Pontos Turísticos</h3>
+                            <div class="item" id="tourism-container"></div>
+                        </div>
+                        <div class="category">
+                            <h3>Atrações</h3>
+                            <div class="item" id="attractions-container"></div>
+                        </div>
+                        <div class="category">
+                            <h3>Compras</h3>
+                            <div class="item" id="shopping-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Atlas. Todos os direitos reservados.</p>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#privacidade">Privacidade</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+</html>

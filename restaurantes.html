@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes Elegantes</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Incluindo a biblioteca do carrossel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        .restaurantes-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .restaurante-card {
+            background-color: #262649;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            width: 80%;
+            color: white;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .restaurante-card h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .carousel {
+            margin: 20px 0;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto; /* Mantém a proporção das imagens */
+            max-height: 400px; /* Ajusta o tamanho máximo das imagens, se necessário */
+            object-fit: cover;
+}
+
+
+        .restaurante-info {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header id="menu-header">
+        <h1>Atlas</h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="name-container">
+                        <span class="label">Página Principal</span>
+                        <img src="icones/home.png" alt="Página Principal" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="paises.html">
+                    <div class="name-container">
+                        <span class="label">Países</span>
+                        <img src="icones/paises     .png" alt="Países" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="pontos-turisticos.html">
+                    <div class="name-container">
+                        <span class="label">Pontos Turísticos</span>
+                        <img src="icones/turismo.png" alt="Pontos Turísticos" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="restaurantes.html">
+                    <div class="name-container">
+                        <span class="label">Restaurantes</span>
+                        <img src="icones/restaurant.png" alt="Restaurantes" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="informacoes.html">
+                    <div class="name-container">
+                        <span class="label">Informações</span>
+                        <img src="icones/informacoes.png" alt="Informações" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="hospedagens.html">
+                    <div class="name-container">
+                        <span class="label">Hospedagens</span>
+                        <img src="icones/hospedagem.png" alt="Hospedagens" class="icon">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    
+    <div class="restaurantes-container">
+        <!-- Restaurante - Tokyo -->
+        <div class="restaurante-card">
+            <h3>Narisawa - Tokyo</h3>
+            <div class="carousel">
+                <div><img src="imagens/narisawa1.jpg" alt="Narisawa 1"></div>
+                <div><img src="imagens/narisawa2.jpg" alt="Narisawa 2"></div>
+                <div><img src="imagens/narisawa3.jpg" alt="Narisawa 3"></div>
+                <div><img src="imagens/narisawa4.jpg" alt="Narisawa 4"></div>
+            </div>
+            <div class="restaurante-info">
+                <p>Narisawa é um restaurante renomado em Tokyo, conhecido por sua fusão de técnicas culinárias tradicionais japonesas com conceitos modernos. Oferece uma experiência gastronômica única e sofisticada, refletindo o compromisso com ingredientes frescos e de alta qualidade.</p>
+            </div>
+        </div>
+
+        <!-- Restaurante - Londres -->
+        <div class="restaurante-card">
+            <h3>The Ledbury - Londres</h3>
+            <div class="carousel">
+                <div><img src="imagens/ledbury1.jpg" alt="The Ledbury 1"></div>
+                <div><img src="imagens/ledbury2.jpg" alt="The Ledbury 2"></div>
+                <div><img src="imagens/ledbury3.jpg" alt="The Ledbury 3"></div>
+                <div><img src="imagens/ledbury4.jpg" alt="The Ledbury 4"></div>
+            </div>
+            <div class="restaurante-info">
+                <p>The Ledbury é um restaurante sofisticado em Londres, famoso por seus pratos criativos e ingredientes de alta qualidade. Com uma atmosfera elegante e acolhedora, oferece uma experiência culinária excepcional, sendo um dos melhores lugares para se jantar na cidade.</p>
+            </div>
+        </div>
+
+        <!-- Restaurante - Santiago -->
+        <div class="restaurante-card">
+            <h3>Bocanariz - Santiago</h3>
+            <div class="carousel">
+                <div><img src="imagens/bocanariz1.jpg" alt="Bocanariz 1"></div>
+                <div><img src="imagens/bocanariz2.jpg" alt="Bocanariz 2"></div>
+                <div><img src="imagens/bocanariz3.jpg" alt="Bocanariz 3"></div>
+                <div><img src="imagens/bocanariz4.jpg" alt="Bocanariz 4"></div>
+            </div>
+            <div class="restaurante-info">
+                <p>Bocanariz é um bar de vinhos e restaurante em Santiago, conhecido por sua extensa carta de vinhos chilenos e pratos deliciosos que complementam perfeitamente cada taça. Oferece um ambiente acolhedor e elegante, ideal para amantes da boa comida e do vinho.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Atlas. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true, // Habilita o deslize automático
+        autoplaySpeed: 2000 // Define o intervalo de tempo para o deslize (2000 ms = 2 segundos)
+    });
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países Turísticos</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+        /* Estilos do corpo */
+        body {
+            background-color: #1E1E2E;
+            color: #FFFFFF;
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os itens */
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #262649;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 20px;
+            height: auto;
+            z-index: 1000;
+            font-size: 1.2em;
+            box-shadow: 2px 0 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Título do site */
+        header h1 {
+            flex-basis: 100%;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        /* Menu do cabeçalho */
+        #menu-header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        /* Links do menu do cabeçalho */
+        #menu-header ul li {
+            margin: 0 10px;
+        }
+
+        #menu-header ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #menu-header ul li a:hover .label {
+            color: #00BFFF; /* Cor ao passar o mouse */
+            transition: color 0.3s ease;
+        }
+
+        /* Estilos para os itens dos países */
+        .pais-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .pais {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #262649;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.pais img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pais-info {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Classe para inverter a ordem da imagem e do texto */
+.invertido {
+    flex-direction: row-reverse; /* Inverte a ordem */
+}
+
+
+
+        .pais-info h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .pais-info p {
+            font-size: 1.2em; /* Aumenta o tamanho do texto */
+            line-height: 1.6; /* Melhor espaçamento entre linhas */
+        }
+
+        .invertido .pais-info {
+            text-align: left; /* Garante que o texto seja alinhado à esquerda mesmo quando invertido */
+        }
+    </style>
+</head>
+<body>
+    <header id="menu-header">
+        <h1>Atlas</h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="name-container">
+                        <span class="label">Página Principal</span>
+                        <img src="icones/home.png" alt="Página Principal" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="paises.html">
+                    <div class="name-container">
+                        <span class="label">Países</span>
+                        <img src="icones/paises.png" alt="Países" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="pontos-turisticos.html">
+                    <div class="name-container">
+                        <span class="label">Pontos Turísticos</span>
+                        <img src="icones/turismo.png" alt="Pontos Turísticos" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="restaurantes.html">
+                    <div class="name-container">
+                        <span class="label">Restaurantes</span>
+                        <img src="icones/restaurant.png" alt="Restaurantes" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="informacoes.html">
+                    <div class="name-container">
+                        <span class="label">Informações</span>
+                        <img src="icones/informacoes.png" alt="Informações" class="icon">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="hospedagens.html">
+                    <div class="name-container">
+                        <span class="label">Hospedagens</span>
+                        <img src="icones/hospedagem.png" alt="Hospedagens" class="icon">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="pais-container">
+        <div class="pais">
+            <img src="imagens/japao.jpg" alt="Japão">
+            <div class="pais-info">
+                <h2>Japão</h2>
+                <p>Explore a rica cultura e a incrível tecnologia do Japão. Desde templos antigos até arranha-céus modernos, o Japão oferece uma mistura perfeita de tradição e inovação. O turismo no Japão é vibrante e diversificado, abrangendo desde as ruas movimentadas de Tóquio até a serenidade dos jardins zen de Kyoto. Além disso, o país é conhecido por seus eventos culturais, festivais e deliciosa culinária, atraindo milhões de visitantes todos os anos.</p>
+            </div>
+        </div>
+        <div class="pais invertido">
+            <div class="pais-info">
+                <h2>Inglaterra</h2>
+                <p>Descubra a história e os marcos emblemáticos da Inglaterra. Londres, com sua arquitetura icônica, é apenas o começo de uma jornada cheia de histórias fascinantes. O país oferece uma vasta gama de atrações turísticas, desde os monumentos históricos como o Big Ben e o Palácio de Buckingham até as pitorescas vilas de Cotswolds. A vibrante cena cultural, os teatros mundialmente renomados e os pubs tradicionais fazem da Inglaterra um destino imperdível para os turistas. Atualmente, o turismo na Inglaterra continua a prosperar, com um foco crescente em experiências sustentáveis e inclusivas.</p>
+            </div>
+            <img src="imagens/inglaterra.jpg" alt="Inglaterra">
+        </div>
+        <div class="pais">
+            <img src="imagens/chile.jpg" alt="Chile">
+            <div class="pais-info">
+                <h2>Chile</h2>
+                <p>Admire as paisagens deslumbrantes do Chile. Desde o deserto do Atacama até os fiordes da Patagônia, o Chile é um país de belezas naturais incomparáveis. O turismo no Chile está fortemente ligado às suas maravilhas naturais, com atividades que vão desde o esqui nas montanhas dos Andes até a exploração dos vinhedos no Vale do Colchagua. A capital, Santiago, é uma metrópole moderna que serve como ponto de partida para muitas aventuras. O Chile é também famoso por sua rica cultura e história, sendo um destino que oferece algo para todos os gostos.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Atlas. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
